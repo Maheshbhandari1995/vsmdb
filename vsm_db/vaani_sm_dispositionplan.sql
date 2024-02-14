@@ -1,0 +1,58 @@
+-- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
+--
+-- Host: 20.193.134.16    Database: vaani_sm
+-- ------------------------------------------------------
+-- Server version	5.7.42
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `dispositionplan`
+--
+
+DROP TABLE IF EXISTS `dispositionplan`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `dispositionplan` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `client_id` int(11) DEFAULT NULL,
+  `planname` varchar(45) DEFAULT NULL,
+  `status` varchar(45) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `created_by` varchar(45) DEFAULT NULL,
+  `updated_by` varchar(45) DEFAULT NULL,
+  `is_deleted` tinyint(4) DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dispositionplan`
+--
+
+LOCK TABLES `dispositionplan` WRITE;
+/*!40000 ALTER TABLE `dispositionplan` DISABLE KEYS */;
+INSERT INTO `dispositionplan` VALUES (6,5,'fhfdh','2','2023-12-06 14:19:34','2023-12-13 08:00:36',NULL,NULL,2),(24,5,'dsadad','1','2023-12-08 11:10:08','2023-12-08 11:10:08',NULL,NULL,1),(25,5,'planA','1','2023-12-08 11:20:25','2023-12-08 11:20:25',NULL,NULL,1),(30,5,'krunal','2','2023-12-08 13:00:53','2023-12-08 13:01:08',NULL,NULL,1),(31,5,'Planbcd','1','2023-12-08 13:04:47','2023-12-08 13:04:47',NULL,NULL,1),(36,24,'Disp','1','2023-12-11 08:28:10','2023-12-11 08:28:10',NULL,NULL,1),(38,5,'Edas','2','2024-01-08 09:39:20','2024-01-08 09:39:25',NULL,NULL,2),(39,5,'fhdrfth','2','2024-01-08 10:26:39','2024-01-08 10:26:48',NULL,NULL,2),(40,5,'PlanB','1','2024-01-08 10:35:44','2024-01-08 10:35:44',NULL,NULL,1),(41,5,'planCC','1','2024-01-09 06:34:16','2024-01-09 06:34:16',NULL,NULL,1),(43,33,'dispo_B','1','2024-01-09 10:34:53','2024-01-09 10:34:53',NULL,NULL,1),(44,35,'dispo_A','1','2024-01-09 10:35:03','2024-01-09 10:35:03',NULL,NULL,1),(45,36,'dispo_c','1','2024-01-09 10:36:17','2024-01-09 10:36:17',NULL,NULL,1),(46,37,'dispo_D','1','2024-01-09 10:37:32','2024-01-09 10:37:32',NULL,NULL,1),(47,34,'NewPlan','1','2024-01-09 13:27:35','2024-01-09 13:27:35',NULL,NULL,1);
+/*!40000 ALTER TABLE `dispositionplan` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-01-23 18:36:52
